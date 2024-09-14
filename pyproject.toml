@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccbcge"
+version = "0.0.0"
+authors = [ 
+    {name = "Bryce Tolman", email = "bat.2000@live.com"},
+]
+description = "A package to access gene expression data for breast cancer"
+readme = { file = "README.md", content-type = "text/markdown"}
+requires-python = ">3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Apache 2.0"
+]
+license = {file = "LICENSE"}
+keywords = {"gene expression", "breast cancer", "bioinformatics"}
+
+[project.dependencies]
+
+[project.urls]
+Homepage = "https://github.com/brycetolman54/ccbcge"
+
