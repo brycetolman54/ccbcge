@@ -1,6 +1,8 @@
 # Installation
 To install this package, run the following command:
-`pip install ccbcge`
+```
+pip install ccbcge
+```
 
 ## License
 
