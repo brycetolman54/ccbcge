@@ -1,0 +1,10 @@
+CFF-Version: 1.2.0
+title: Easy Access to Breast Cancer Gene Expression
+version: 0.0.0
+date-released: 2024-9-13
+authors:
+  - family-names: Piccolo
+    given-names: Stephen
+  - family-names: Tolman
+    given-names: Bryce
+url: https://github.com/brycetolman54/ccbcge
