@@ -6,7 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "ccbcge"
 version = "0.0.0"
 authors = [ 
-    {name = "Bryce Tolman", email = "bat.2000@live.com"},
+    {name = "Bryce Tolman"},
+    {email = "bat.2000@live.com"},
 ]
 description = "A package to access gene expression data for breast cancer"
 readme = { file = "README.md", content-type = "text/markdown"}
@@ -15,10 +16,12 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: Apache 2.0"
 ]
-license = {file = "LICENSE"}
-keywords = {"gene expression", "breast cancer", "bioinformatics"}
-
-[project.dependencies]
+license = {text = "Apache 2.0"}
+keywords = ["gene expression", "breast cancer", "bioinformatics"]
+dependencies = [
+    "requests>2.25.1",
+    "pandas>1.3.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/brycetolman54/ccbcge"
