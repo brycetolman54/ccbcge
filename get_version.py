@@ -3,7 +3,8 @@ import subprocess
 # get the version from the most recent tag
 def get_version():
     try:
-        version = subprocess.check_output(['git', 'describe', '--tags']).strip().decode('utf-8')
+        tag = subprocess.check_output(['git', 'describe', '--tags']).strip().decode('utf-8')
+        version = tag[:(min(tag.find('-'), len(tag)))]
     except subprocess.CalledProcessError:
         version = "0.0.0"
     return version
