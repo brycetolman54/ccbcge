@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ccbcge"
-dynamic = ["version"]
+version = "v0.0.2"
 authors = [ 
     {name = "Bryce Tolman"},
     {email = "bat.2000@live.com"},
@@ -22,9 +22,6 @@ dependencies = [
     "requests>2.25.1",
     "pandas>1.3.0",
 ]
-
-[tools.setuptools_scm]
-write_to = "src/ccbcge/version.py"
 
 [project.urls]
 Homepage = "https://github.com/brycetolman54/ccbcge"
