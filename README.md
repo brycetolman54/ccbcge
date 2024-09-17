@@ -16,8 +16,9 @@ pip install ccbcge
 ## Dependencies
 
 This package requires use of the following packages:
-- `request` 
-- `pandas` 
+- `request`
+- `pandas`
+
 If you do not have them installed already, they will be installed for you.
 
 ## Development
