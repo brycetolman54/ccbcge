@@ -16,3 +16,7 @@ This package requires use of the `request` and `pandas` python packages. If you 
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for more information.
 
+# TODO
+
+- [ ] Add a CLI
+- [ ] Add more data!!
