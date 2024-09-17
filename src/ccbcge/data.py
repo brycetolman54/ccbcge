@@ -8,5 +8,5 @@ def importData(url = "https://osf.io/download/ygfea"):
     df = pd.read_csv(stringData, sep='\t')
     return df
 
-def printData():
+def printData(df):
     print(df)

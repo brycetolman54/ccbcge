@@ -3,16 +3,17 @@ import subprocess
 # get the version from the most recent tag
 def get_version():
     try:
-        tag = subprocess.check_output(['git', 'describe', '--tags']).strip().decode('utf-8')
+        tag = subprocess.check_output(['git', 'describe', '--tags'], text=True)
         version = tag[:(min(tag.find('-'), len(tag)))]
     except subprocess.CalledProcessError:
-        version = "0.0.0"
+        with open('src/ccbcge/version.py', 'r') as version_file:
+            line = version_file.readlines()
+            version = line[14:]
     return version
 
-def UpdateVersion():
+def UpdateVersion(version):
 
     # update the version in my version file
-    version = get_version()
     with open('src/ccbcge/version.py', 'w') as version_file:
         version_file.write(f'__version__ = "{version}"\n')
 
@@ -29,5 +30,6 @@ def UpdateVersion():
                 write_file.write(line)
 
 if __name__ == "__main__":
-    UpdateVersion()
-    print("Version Updated")
+    version = get_version()
+    UpdateVersion(version)
+    print(f"\nVersion Updated: {version}\n")
