@@ -50,6 +50,11 @@ python -m build
 twine upload dist/*
 ```
 
+Remove the `dist/` directory
+```
+rm -rf dist/*
+```
+
 ## Testing
 
 If you want to test the package before uploading it, run the following (from the root of the project):
