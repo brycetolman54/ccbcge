@@ -14,9 +14,9 @@ readme = { file = "README.md", content-type = "text/markdown"}
 requires-python = ">3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: Apache 2.0"
+    "License :: OSI Approved :: Apache Software License",
 ]
-license = {text = "Apache 2.0"}
+license = {text = "Apache-2.0"}
 keywords = ["gene expression", "breast cancer", "bioinformatics"]
 dependencies = [
     "requests>2.25.1",
