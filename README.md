@@ -28,3 +28,7 @@ Help for how to update this package is found in a [Developers File](dev.md)
 ## License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for more information.
+
+## Acknowledgements
+
+The idea for this project came from a similar package from the Payne Lab at Brigham Young University, called `cptac`. To find out more about that package, visit the [CPTAC repository](https://github.com/PayneLab/cptac/)
