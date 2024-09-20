@@ -13,16 +13,16 @@ pip install ccbcge
 
 There are four major functions that you can call.
 1. `ChooseData()`
-    a. This allows you see the list of data sets you can access and choose one to download.
-    b. It returns two data sets: the gene expression data, then the meta data for that data set.
-2. `ShowDataSets()`
-    a. This shows the list of data sets you can access.
-3. `importData(dataSet)`
-    a. This takes as input the name of the data set you want to access.
-    b. It returns the gene expression data of that name as a `pandas` data frame.
-4. `importMeta(dataSet)`
-    a. This takes as input the name of the data set you want to access.
-    b. It returns the meta data for that data set as a `pandas` data frame.
+    - This allows you see the list of data sets you can access and choose one to download.
+    - It returns two data sets: the gene expression data, then the meta data for that data set.
+4. `ShowDataSets()`
+    - This shows the list of data sets you can access.
+5. `importData(dataSet)`
+    - This takes as input the name of the data set you want to access.
+    - It returns the gene expression data of that name as a `pandas` data frame.
+6. `importMeta(dataSet)`
+    - This takes as input the name of the data set you want to access.
+    - It returns the meta data for that data set as a `pandas` data frame.
 
 The idea behind these functions is that you can access the data frame easily by name if you 
 already know which data set you want to access.
