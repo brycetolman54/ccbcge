@@ -41,6 +41,16 @@ An example of this would be:
 git tv v0.1.4 "Added new data set"
 ```
 
+After you tag a new version, for that version to reflect on GitHub, you have to go to the package site and create a new release 
+in the side bar of the home page.
+1. Click on "Releases"
+2. Click on "Draft a new release"
+3. Choose the Tag to use
+4. Give the release a name (the version number in format "vx.x.x" typically)
+5. Write a message about what the release updates from the past release
+6. Make sure the "Set as the latest release" checkbox is marked
+7. Click "Publish release"
+
 ## Updating the Package on PyPI
 
 To update the package on PyPI, do the following:
