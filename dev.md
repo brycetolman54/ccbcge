@@ -6,7 +6,11 @@ To see a list of tasks to accomplish, visit the [TODO page](TODO.md)
 
 ## Setup
 
-To copy the repository to your local device, use the following:
+In order to update the package in PyPI, you need to be added as a collaborator on that site.
+If you do not already have an account on PyPI, go [create one](https://pypi.org/account/register/).
+After that, contact Dr. Piccolo and provide him your username so he can add you to the project.
+
+To copy the package repository to your local device, use the following:
 ```
 git clone https://github.com/brycetolman54/ccbcge.git
 ```
@@ -16,7 +20,8 @@ Once done, run the .addAlias.sh file in the project folder using the following:
 ./.addAlias.sh
 ```
 
-That will add an alias to your `.git/config` file that will allow for version tagging.
+This will add an alias to your `.git/config` file that will allow for version tagging.
+You must update the version every time you try to update the package in PyPI.
 
 
 You will need twine to update the package on PyPI. Install it using the following:
@@ -54,6 +59,15 @@ Remove the `dist/` directory
 ```
 rm -rf dist/*
 ```
+
+## Adding Data
+
+There is an array called `dataSets` which contains the names of the different data sets we have on [OSF](https://osf.io/eky3p/?view_only=).
+There is an array called `dataURLs` which contains the URLs of each gene expression data set in the form: `https://osf.io/download/{dataSetId}`.
+There is an array called `metaDataURLs` which contains the URLs of the meta data for each data set in the form: `https://osf.io/download/{metaDataSetId}`.
+In order to add new data, you only need to add the name of the data set to the first array and the URLs for the gene expression data set and metadata set
+to the second and third data arrays.
+
 
 ## Testing
 
