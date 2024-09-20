@@ -1,8 +1,12 @@
 # CCBCGE
 
-The goal of this python package is to provide quick, easy acces to breast cancer gene expression data for analysis.
+The goal of this python package is to provide quick, easy access to breast cancer gene expression data from OSF for analysis.
+
+You can view this python package on its [PyPI Site](https://pypi.org/project/ccbcge/)
 
 ## Installation
+
+Since this is a python package, you must have python installed on your computer. This package calls for Python 3.8 or greater.
 
 To install this package, run the following command in your terminal:
 ```
@@ -58,4 +62,6 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 
 ## Acknowledgements
 
-The idea for this project came from a similar package from the Payne Lab at Brigham Young University, called `cptac`. To find out more about that package, visit the [CPTAC repository](https://github.com/PayneLab/cptac/)
+The idea for this project came from a similar package from the Payne Lab at Brigham Young University, called `cptac`.
+To find out more about that package, visit the [CPTAC Github repository](https://github.com/PayneLab/cptac/)
+or the [CPTAC PyPI package](https://pypi.org/project/cptac/).

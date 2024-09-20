@@ -73,8 +73,11 @@ rm -rf dist/*
 ## Adding Data
 
 There is an array called `dataSets` which contains the names of the different data sets we have on [OSF](https://osf.io/eky3p/?view_only=).
+
 There is an array called `dataURLs` which contains the URLs of each gene expression data set in the form: `https://osf.io/download/{dataSetId}`.
+
 There is an array called `metaDataURLs` which contains the URLs of the meta data for each data set in the form: `https://osf.io/download/{metaDataSetId}`.
+
 In order to add new data, you only need to add the name of the data set to the first array and the URLs for the gene expression data set and metadata set
 to the second and third data arrays.
 
