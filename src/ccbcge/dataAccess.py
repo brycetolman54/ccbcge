@@ -35,7 +35,7 @@ dataURLs = [
 metaDataURLs = [
     "https://osf.io/download/ygfea",
     "https://osf.io/download/j6bfc",
-    " https://osf.io/download/kywrv",
+    "https://osf.io/download/kywrv",
 ]
 
 
@@ -60,7 +60,7 @@ def importMeta(dataSet):
         return None
 
     # grab the meta data url
-    url = meteDataURLs[index]
+    url = metaDataURLs[index]
 
     # access the data and place it in a data frame
     data = requests.get(url)
@@ -74,7 +74,7 @@ def importMeta(dataSet):
 # input: the name of a data set in string form
 #
 # returns: a pandas data frame
-def importData(url = "https://osf.io/download/k52ux"):
+def importData(dataSet):
 
     # check that the type of the input is a string
     if not isinstance(dataSet, str):
