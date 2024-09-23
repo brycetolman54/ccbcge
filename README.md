@@ -2,7 +2,7 @@
 
 The goal of this python package is to provide quick, easy access to breast cancer gene expression data from OSF for analysis.
 
-You can view this python package on its [PyPI Site](https://pypi.org/project/ccbcge/)
+You can view this python package on its [PyPI Site](https://pypi.org/project/ccbcge/).
 
 ## Installation
 
@@ -14,6 +14,13 @@ pip install ccbcge
 ```
 
 ## Usage
+
+This package is used just like any other Python package. Import the package and then call any of its functions.
+```
+import ccbcge as cc
+
+cc.functionCall()
+```
 
 There are four major functions that you can call.
 1. `ChooseData()`
@@ -34,7 +41,7 @@ already know which data set you want to access.
 For those who do not know which data sets they want to access, however, they have the option
 of seeing the data sets and choosing from them the one they want to work with.
 
-If you want to use all of the data, you could write a simple for loop as follows:
+If you want to use all of the data sets in a larger analysis, you could write a simple for loop as follows:
 ```
 for dataSet in dataSets:
     geneData = importData(dataSet)
@@ -42,6 +49,9 @@ for dataSet in dataSets:
 
     # analyze the data here
 ```
+
+After you have downloaded the data into the data frames, you can work with them like any other `pandas` data frame. 
+Furthermore, you can write the data to files to keep them for later use without needing to redownload them. 
 
 
 ## Dependencies
